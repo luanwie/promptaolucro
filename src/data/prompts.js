@@ -8,6 +8,7 @@ export const promptsData = {
       description: 'Avalie o tamanho do mercado, concorrentes e janela de oportunidade para sua ideia de micro SaaS.',
       prompt: `Você é um analista de mercado especialista em micro SaaS no Brasil. Analise a seguinte ideia: [IDEIA]. Me diga: 1) Tamanho estimado do mercado brasileiro 2) Principais concorrentes existentes 3) Nível de saturação (baixo/médio/alto) 4) Janela de oportunidade atual 5) Veredicto final: vale ou não vale perseguir`,
       model: 'ChatGPT 4o',
+      downloadFile: '01-analisar-potencial-de-mercado.md',
     },
     {
       id: 'p02',
@@ -17,6 +18,7 @@ export const promptsData = {
       description: 'Encontre ângulos de diferenciação reais frente aos concorrentes e escolha o melhor caminho.',
       prompt: `Dado que quero construir [IDEIA] e os principais concorrentes são [CONCORRENTES], me ajude a encontrar um diferencial real. Liste 5 ângulos de diferenciação possíveis com nível de dificuldade de execução para cada um. Depois escolha o melhor e explique por quê.`,
       model: 'ChatGPT 4o',
+      downloadFile: '02-identificar-diferencial-competitivo.md',
     },
     {
       id: 'p03',
@@ -26,6 +28,7 @@ export const promptsData = {
       description: 'Calcule uma receita recorrente mensal realista para 3, 6 e 12 meses com crescimento orgânico.',
       prompt: `Quero lançar [IDEIA] cobrando assinatura mensal. Me ajude a calcular um MRR realista para 3, 6 e 12 meses considerando: público-alvo brasileiro, ticket médio compatível com o mercado, taxa de conversão realista de 2-5%, e crescimento orgânico sem tráfego pago. Mostre os cálculos.`,
       model: 'ChatGPT 4o',
+      downloadFile: '03-estimar-mrr-realista.md',
     },
   ],
   2: [
@@ -37,6 +40,7 @@ export const promptsData = {
       description: 'Crie opções de nome memoráveis com domínios disponíveis para o seu SaaS brasileiro.',
       prompt: `Crie 10 opções de nome para um SaaS brasileiro que resolve [PROBLEMA] para [PÚBLICO]. Critérios: fácil de pronunciar, memorável, máximo 2 sílabas ou palavras, que transmita [BENEFÍCIO PRINCIPAL]. Para cada nome sugira também um domínio .com.br ou .app disponível. Destaque os 3 melhores com justificativa.`,
       model: 'ChatGPT 4o',
+      downloadFile: '04-gerar-nome-e-dominio.md',
     },
     {
       id: 'p05',
@@ -46,6 +50,7 @@ export const promptsData = {
       description: 'Gere a proposta de valor, subtítulo, benefícios e CTA para comunicar seu produto com clareza.',
       prompt: `Crie a proposta de valor do meu SaaS chamado [NOME] que ajuda [PÚBLICO] a resolver [PROBLEMA]. Gere: 1) Uma frase de valor principal com no máximo 10 palavras 2) Subtítulo de apoio com no máximo 20 palavras 3) 3 bullet points de benefícios concretos 4) Uma frase de CTA irresistível. Use linguagem direta, sem jargão técnico.`,
       model: 'ChatGPT 4o',
+      downloadFile: '05-criar-proposta-de-valor.md',
     },
     {
       id: 'p06',
@@ -55,6 +60,7 @@ export const promptsData = {
       description: 'Construa a persona ideal do seu cliente com história, dores e momento de compra.',
       prompt: `Crie a persona principal do [NOME DO SAAS]. Inclua: nome fictício, idade, profissão, renda mensal, maior frustração do dia a dia relacionada a [PROBLEMA], o que ela já tentou para resolver, por que falhou, e o momento exato em que ela pagaria por uma solução. Escreva como uma história curta de 1 parágrafo.`,
       model: 'ChatGPT 4o',
+      downloadFile: '06-definir-persona-do-cliente.md',
     },
   ],
   3: [
@@ -66,6 +72,7 @@ export const promptsData = {
       description: 'Crie toda a estrutura e copy de uma landing page de alta conversão para seu SaaS.',
       prompt: `Crie a estrutura completa de uma landing page de alta conversão para [NOME DO SAAS]. Inclua em ordem: Hero (headline + subheadline + CTA), Prova social (3 métricas fictícias mas realistas), Problema (seção de dor), Solução (como funciona em 3 passos), Benefícios (6 cards), Preço (1 plano simples), FAQ (5 perguntas), CTA final. Para cada seção escreva o copy completo em português.`,
       model: 'ChatGPT 4o',
+      downloadFile: '07-estrutura-completa-da-pagina.md',
     },
     {
       id: 'p08',
@@ -75,6 +82,7 @@ export const promptsData = {
       description: 'Escreva variações de headline usando gatilhos mentais diferentes com subheadlines e CTAs.',
       prompt: `Escreva 5 variações de headline para o hero da landing page do [NOME DO SAAS] voltado para [PÚBLICO]. Cada variação deve usar um gatilho diferente: curiosidade, medo, resultado, identidade e urgência. Para cada headline escreva também o subheadline e o texto do botão CTA.`,
       model: 'ChatGPT 4o',
+      downloadFile: '08-copy-do-hero-e-cta.md',
     },
     {
       id: 'p09',
@@ -84,6 +92,7 @@ export const promptsData = {
       description: 'Mapeie as objeções do seu público e transforme-as em respostas persuasivas para o FAQ.',
       prompt: `Liste as 7 principais objeções que [PÚBLICO] teria antes de comprar [NOME DO SAAS] a [PREÇO]/mês. Para cada objeção escreva uma resposta persuasiva e honesta de 2-3 linhas. Depois reformate tudo como uma seção de FAQ pronta para colocar na landing page.`,
       model: 'ChatGPT 4o',
+      downloadFile: '09-secao-de-objecoes-e-faq.md',
     },
   ],
   4: [
@@ -95,6 +104,7 @@ export const promptsData = {
       description: 'Defina 3 planos com preços, features e justificativa baseada no mercado brasileiro.',
       prompt: `Me ajude a criar a estrutura de preços do [NOME DO SAAS] para o mercado brasileiro. Considere que o público é [PÚBLICO] com renda de [RENDA ESTIMADA]. Crie 3 planos (básico, pro, enterprise) com: preço mensal, preço anual com desconto, lista de features por plano, e qual plano destacar como recomendado. Justifique os preços com base em concorrentes e disposição de pagamento do mercado.`,
       model: 'ChatGPT 4o',
+      downloadFile: '10-estrutura-de-planos-e-precos.md',
     },
     {
       id: 'p11',
@@ -104,6 +114,7 @@ export const promptsData = {
       description: 'Crie uma oferta irresistível com desconto, bônus e urgência para os primeiros 20 clientes.',
       prompt: `Crie uma oferta irresistível de lançamento para o [NOME DO SAAS] que será vendido normalmente por [PREÇO]. A oferta deve incluir: preço especial com desconto, bônus exclusivos para os primeiros clientes, prazo de validade, e o texto completo para anunciar nas redes sociais e por email. O objetivo é conseguir os primeiros 20 clientes pagantes.`,
       model: 'ChatGPT 4o',
+      downloadFile: '11-oferta-de-lancamento.md',
     },
     {
       id: 'p12',
@@ -113,6 +124,7 @@ export const promptsData = {
       description: 'Monte um plano mês a mês para alcançar R$5.000 de receita recorrente em 6 meses.',
       prompt: `Quero chegar a R$5.000 MRR com o [NOME DO SAAS] cobrando [PREÇO]/mês. Monte um plano realista mês a mês de 1 a 6 meses mostrando: meta de clientes ativos, estratégia de aquisição para aquele mês, churn esperado, e MRR acumulado. Considere que não terei tráfego pago nos primeiros 2 meses.`,
       model: 'ChatGPT 4o',
+      downloadFile: '12-calcular-tempo-para-5k-mrr.md',
     },
   ],
   5: [
@@ -124,6 +136,7 @@ export const promptsData = {
       description: 'Escreva mensagens frias para DM, WhatsApp ou LinkedIn que geram curiosidade e resposta.',
       prompt: `Escreva um script de mensagem fria para abordar potenciais clientes do [NOME DO SAAS] via [CANAL: Instagram DM / WhatsApp / LinkedIn]. A mensagem deve ter no máximo 5 linhas, não parecer spam, gerar curiosidade, e terminar com uma pergunta que incentive resposta. Crie 3 variações com abordagens diferentes.`,
       model: 'ChatGPT 4o',
+      downloadFile: '13-script-de-abordagem-fria.md',
     },
     {
       id: 'p14',
@@ -133,6 +146,7 @@ export const promptsData = {
       description: 'Crie o post de lançamento para Instagram e TikTok com hook, problema, solução e CTA.',
       prompt: `Escreva o post de lançamento do [NOME DO SAAS] para Instagram e TikTok. Deve incluir: hook nas primeiras 2 linhas para parar o scroll, apresentação do problema, apresentação da solução, prova ou resultado esperado, CTA claro com link. Escreva em tom conversacional, sem parecer propaganda. Máximo 150 palavras.`,
       model: 'ChatGPT 4o',
+      downloadFile: '14-post-de-lancamento.md',
     },
     {
       id: 'p15',
@@ -142,6 +156,7 @@ export const promptsData = {
       description: 'Escreva um email frio com assunto matador, identificação da dor e CTA direto.',
       prompt: `Escreva um email frio de apresentação do [NOME DO SAAS] para enviar para [PÚBLICO]. Estrutura: assunto que gera abertura (máximo 8 palavras), abertura personalizada, identificação da dor em 2 linhas, apresentação da solução em 2 linhas, prova social ou resultado esperado, CTA simples com link. Tom: direto, humano, sem parecer automático. Máximo 120 palavras no corpo.`,
       model: 'ChatGPT 4o',
+      downloadFile: '15-email-de-apresentacao.md',
     },
   ],
 }

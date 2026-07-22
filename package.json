@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "generate:prompts": "node scripts/generate-prompts.mjs",
+    "prebuild": "npm run generate:prompts",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --test"
   },
   "dependencies": {
     "react": "^19.0.0",

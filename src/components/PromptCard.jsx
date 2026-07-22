@@ -44,13 +44,26 @@ function PromptCard({ prompt }) {
       </div>
 
       <div className="prompt-card-footer">
-        <button
-          className={`prompt-copy-btn${copied ? ' prompt-copy-btn--copied' : ''}`}
-          onClick={handleCopy}
-        >
-          <span>{copied ? '✓' : '📋'}</span>
-          <span>{copied ? 'Copiado!' : 'Copiar prompt'}</span>
-        </button>
+        <div className="prompt-card-actions">
+          <button
+            type="button"
+            className={`prompt-copy-btn${copied ? ' prompt-copy-btn--copied' : ''}`}
+            onClick={handleCopy}
+          >
+            <span>{copied ? '✓' : '📋'}</span>
+            <span>{copied ? 'Copiado!' : 'Copiar prompt'}</span>
+          </button>
+          <a
+            className="prompt-download-link"
+            href={`${import.meta.env.BASE_URL}prompts/${prompt.downloadFile}`}
+            download={prompt.downloadFile}
+            onClick={() => showToast('Download iniciado!')}
+            aria-label={`Baixar Prompt ${prompt.number} em Markdown`}
+          >
+            <span aria-hidden="true">↓</span>
+            <span>Baixar .md</span>
+          </a>
+        </div>
         <span className="prompt-model-tag">{prompt.model}</span>
       </div>
     </div>

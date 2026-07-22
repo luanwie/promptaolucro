@@ -574,10 +574,20 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 16px;
 }
 
-.prompt-copy-btn {
+.prompt-card-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.prompt-copy-btn,
+.prompt-download-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -592,10 +602,17 @@ button {
   transition: all 0.2s ease;
 }
 
-.prompt-copy-btn:hover {
+.prompt-copy-btn:hover,
+.prompt-download-link:hover {
   color: var(--text-primary);
   background: rgba(255, 255, 255, 0.05);
   border-color: var(--border-color);
+}
+
+.prompt-download-link:focus-visible,
+.prompt-copy-btn:focus-visible {
+  outline: 2px solid var(--accent-green);
+  outline-offset: 2px;
 }
 
 .prompt-copy-btn--copied {
